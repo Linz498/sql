@@ -54,7 +54,8 @@ The store wants to keep customer addresses. Propose two architectures for the CU
 **HINT:** search type 1 vs type 2 slowly changing dimensions. 
 
 ```
-Your answer...
+If the bookstore wants to keep customer addresses it will need to determine if it only wants to keep the most recent customer address, or if it would like to keep a record of all addresses associated with a customer. Perhaps the store only cares to know a customer's current address for promotional or shipping purposes. Architecture for a Type 1 slowly changing dimension has only one row per customer, and does this by overwriting old data every time a new address is entered into the system. Conversely the store might determine that they would like historical records of all addresses associated with a customer. Maybe they want to be able to refer to it if a customer encounters any issues with shipping or disputes receiving an order. Architecture for a type 2 slowly changing dimension has multiple rows per customer, thus retaining their address history. A new customer address will add a new row to the table. These architecture types are used to handle dynamic changes in data over time.
+
 ```
 
 ***
