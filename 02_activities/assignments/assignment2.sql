@@ -61,7 +61,7 @@ WHERE visit_number = 1
 /* 3. Using a COUNT() window function, include a value along with each row of the 
 customer_purchases table that indicates how many different times that customer has purchased that product_id. */
 
-/*I found this question worded in a confusing manner, and I am not quite sure what it wants but
+/*--I found this question worded in a confusing manner, and I am not quite sure what it wants but
 translated directly it wants to know how many times a customer bought each product, 
 and wants this information for each row in the customer_purchases table. That would be annoying
 to try and read, to me it makes more sense to see how many times a customer bought each product, without the unique rows.
